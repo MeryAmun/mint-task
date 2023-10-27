@@ -26,7 +26,8 @@ function App() {
               code,
               grant_type: "authorization_code",
               //redirect_uri: `http://localhost:3000`,
-              redirect_uri: `https://mint-d4711.web.app/`,
+              redirect_uri: `https://pioneer.mintprotocol.app/`,
+              // redirect_uri: `https://mint-d4711.web.app/`,
               scope: "guilds.members.read",
             }).toString(),
             headers: {
