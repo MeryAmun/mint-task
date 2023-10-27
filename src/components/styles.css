@@ -1,0 +1,25 @@
+
+
+.guild__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+}
+.guild__cardBordered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #44FFBC;
+    padding: 10px 15px;
+    gap: 10px;
+}
+h4{
+    color: #4C6983;
+    font-family: Chivo Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 95%;
+}

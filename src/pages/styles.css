@@ -3,23 +3,54 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 10px;
+ 
 }
 
+.home__paragraphs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
 .home__bold {
     color: #8ABDEB;
     text-shadow: 1px 1px 0px #0A0A15;
     font-family: Chivo Mono;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 900;
     line-height: 137.5%;
     /* 16.5px */
     letter-spacing: -0.36px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-
-.home__light {
+.lists{
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+.home__buttons{
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.home__button{
+    padding: 0;
+}
+li {
+    list-style: none;
+    color: #8ABDEB;
+    font-family: Chivo Mono;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 137.5%;
+    font-weight: 300;
+}
+.home__light{
     color: #8ABDEB;
     font-family: Chivo Mono;
     font-size: 12px;
@@ -37,18 +68,16 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 137.5%;
     /* 24.75px */
     letter-spacing: -0.54px;
 }
 
 .input__and__button {
     width: 100%;
-    padding: 20px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 20px 0;
+    margin: 5px 0;
     gap: 15px;
 }
 
@@ -65,6 +94,7 @@
     mix-blend-mode: screen;
     /* filter: blur(15px); */
     padding: 12px 20px;
+    text-decoration: none;
 }
 
 .link__buttonVerify {
@@ -78,6 +108,7 @@
     border: 5px solid #15313A;
     background: #11282F;
     box-shadow: 1px 1px 0px 0px #0A0A15;
+    text-decoration: none;
 }
 
 .link__buttonVerified {
@@ -106,6 +137,16 @@
     mix-blend-mode: screen;
     /* filter: blur(15px); */
     padding: 12px 20px;
+    text-decoration: none;
+}
+
+.home__link {
+    font-family: Chivo Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    color: #44FFBC;
+    text-decoration: none;
 }
 
 .button__input {
@@ -125,6 +166,14 @@
 
 }
 
+.submission__complete{
+    color: #44FFBC;
+    font-family: Chivo Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 95%;   
+}
 ::placeholder {
     color: #4C6983;
     font-family: Chivo Mono;
@@ -133,6 +182,16 @@
     font-weight: 500;
     line-height: 95%;
     /* 15.2px */
+}
+
+.user__not_found {
+    color: #ec0808;
+    font-family: Chivo Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-top: -10px;
 }
 
 .home__paragraphs {
@@ -160,26 +219,35 @@ button {
     cursor: pointer;
 }
 
-.twitter__paragraphBold {}
-
-.twitter__paragraphBold {}
+.error__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media screen and (max-width:570px) {
-    .home{
+    .home {
         padding: 30px;
     }
+
     .input__and__button {
         flex-wrap: wrap;
         gap: 20px;
     }
+
     .home__paragraphs {
         width: 100%;
     }
-    .eth__address,
-.submit__button {
-    width: 100%;
-    margin-right: 0%;
 
-}
+    .eth__address,
+    .submit__button {
+        width: 100%;
+        margin-right: 0%;
+
+    }
+    .home__buttons{
+        margin-left: 0;
+    }
 }
